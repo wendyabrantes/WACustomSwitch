@@ -30,7 +30,7 @@ $ pod setup
 Add WATokenFieldView to Podfile:
 
 ``` bash
-pod 'WATokenFieldView'
+pod 'WACustomSwitch'
 ```
 
 Call 'pod install':
@@ -41,8 +41,9 @@ pod install
 
 ### Manual install
 
-You to drop WACustomView folder into your project and include headers. 
+You will need to drop WACustomView folder into your project and include headers. 
 This project also requires facebook pop library.
+At the moment there are only 2 types of animation so feel free to add your custom one :)
 
 ## Example usage
 
