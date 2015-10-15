@@ -54,7 +54,6 @@ class WAAnimationView: UIView {
                     layer.speed = 0
                     layer.timeOffset = 0
                 }
-             //   setNeedsDisplay()
             }
             else{
                 let offset = progress * CGFloat(animDuration)

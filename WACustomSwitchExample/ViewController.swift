@@ -14,7 +14,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        //wa switch
         let nativeSwitch = WACustomSwitch(frame: CGRect(x:100, y:44, width:60, height:35), animationType: AnimationType.NativeAnimation)
         view.addSubview(nativeSwitch)
         
