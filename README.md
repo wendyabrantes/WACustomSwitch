@@ -71,6 +71,7 @@ Wendy Abrantes
 
 - https://github.com/wendyabrantes
 - https://twitter.com/wendyabrantes
+- http://iostuts.io/
 - abranteswendy@gmail.com
 
 ## License
