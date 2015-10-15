@@ -21,7 +21,8 @@ Pod::Spec.new do |s|
 
   s.requires_arc = true
   
-  s.dependency 'pop'
   s.ios.deployment_target = '8.0'
   s.ios.frameworks = ['UIKit', 'Foundation']
+  s.dependency 'pop'
+
 end
