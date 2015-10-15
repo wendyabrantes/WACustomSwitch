@@ -1,5 +1,4 @@
 # WACustomSwitch
-www.iostuts.io
 
 WACustomSwitch is custom component that allow user to create complex switch animation.
 
@@ -43,7 +42,7 @@ pod install
 
 You will need to drop WACustomView folder into your project and include headers. 
 This project also requires facebook pop library.
-At the moment there are only 2 types of animation so feel free to add your custom one :)
+
 
 ## Example usage
 
@@ -63,6 +62,30 @@ At the moment there are only 2 types of animation so feel free to add your custo
         NSLog("value updated %@", toggle.on)    
     }
         
+```
+At the moment there are only 2 types of animation so feel free to add your custom one :)
+
+## Create your animation
+
+All you need to do is subclassing WAAnimationView
+``` objective-c
+    //OVERRIDE SETUPLAYERS AND ADD YOUR LAYER
+    override func setupLayers() {
+        super.setupLayers()
+        //add your layer with animation to the array layerWithAnims
+        self.layerWithAnims = [layer1, layer2, layer3]        
+    }
+    
+    //OVERRIDE START ALL ANIMATION
+    override func startAllAnimations() {
+        super.startAllAnimations()
+        
+        //add your animation to their respective layer
+        layer1.addAnimation("replace_with_animationGroup", forKey: "strokeBackgroundAnimations")
+        layer2.addAnimation("replace_with_caKeyFrameAnimation", forKey: "backgroundAnimations")
+        layer3.addAnimation("replace_with_cabasicAnmation", forKey: "thumbAnimations")
+    }
+
 ```
 
 ## Contact
